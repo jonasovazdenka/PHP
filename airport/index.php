@@ -8,20 +8,20 @@ mysqli_query($con, "SET CHARACTER SET UTF8");
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airport</title>
+    <title>ap</title>
 </head>
 <body>
     <?php
-$q= "SELECT * FROM airport";
+$q= "SELECT * FROM ap";
 $result = mysqli_query($con, $q);
 echo '<table>' . PHP_EOL;
-while (($airport = mysqli_fetch_array($result, MYSQLI_ASSOC))!== null) {
-    echo '<th>code</th><td><b>' . $airport ['code'] . '</td></b>' '<td>'. $airport ['name'] . '</td>' . PHP_EOL;
+while (($ap = mysqli_fetch_array($result, MYSQLI_ASSOC))!== null) {
+    echo '<th>code</th><td><b>' . $ap ['code'] . '</td></b>' '<td>'. $ap ['name'] . '</td>' . PHP_EOL;
 }
 echo '</table>' . PHP_EOL;
 ?>
