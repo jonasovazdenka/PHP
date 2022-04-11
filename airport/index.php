@@ -21,7 +21,7 @@ $q= "SELECT * FROM ap";
 $result = mysqli_query($con, $q);
 echo '<table>' . PHP_EOL;
 while (($ap = mysqli_fetch_array($result, MYSQLI_ASSOC))!== null) {
-    echo '<th>code</th><td><b>' . $ap ['code'] . '</td></b>' '<td>'. $ap ['name'] . '</td>' . PHP_EOL;
+    echo '<th></th><td><b>' . $ap ['code'] . '</td></b>' . '<td>'. $ap ['name'] . '</td>' . PHP_EOL;
 }
 echo '</table>' . PHP_EOL;
 ?>
