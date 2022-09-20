@@ -2,4 +2,4 @@
 
 PHP
 
-![image.jpg](screenshot/image.jpg)
+![image.png](screenshot/image.png)
